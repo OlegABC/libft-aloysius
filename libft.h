@@ -6,7 +6,7 @@
 /*   By: tkeynes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 20:08:00 by tkeynes           #+#    #+#             */
-/*   Updated: 2017/11/14 22:19:19 by tkeynes          ###   ########.fr       */
+/*   Updated: 2017/11/14 22:36:52 by tkeynes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,6 @@ void				*ft_memset(void *b, int c, size_t len);
 char				*ft_strcat(char *dest, char *src);
 int					ft_strcmp(const char *s1, const char *s2);
 char				*ft_strcpy(char *dest, char *src);
-char				*ft_strcpy(char *dest, char *src);
-char				*ft_strncat(char *dest, char *src, int nb);
 int					ft_strlen(char *str);
 char				*ft_strncat(char *dest, char *src, int nb);
 int					ft_strncmp(const char *s1, const char *s2, unsigned int n);
