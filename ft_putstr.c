@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tkeynes <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/11/14 19:58:53 by tkeynes           #+#    #+#             */
+/*   Updated: 2017/11/14 19:59:08 by tkeynes          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-void    ft_putstr(char *str)
+void	ft_putstr(char *str)
 {
-    if (!str)
-        return;
-    write(1, str, ft_strlen(str));
+	if (!str)
+		return ;
+	write(1, str, ft_strlen(str));
 }

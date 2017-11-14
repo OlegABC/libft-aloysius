@@ -6,13 +6,13 @@
 /*   By: tkeynes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/06 02:09:18 by tkeynes           #+#    #+#             */
-/*   Updated: 2017/08/06 17:42:51 by tkeynes          ###   ########.fr       */
+/*   Updated: 2017/11/14 20:20:37 by tkeynes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_start_same(char *str, char *to_find)
+static int		ft_start_same(char *str, char *to_find)
 {
 	while (*to_find != '\0')
 	{
@@ -24,7 +24,7 @@ int		ft_start_same(char *str, char *to_find)
 	return (1);
 }
 
-char	*ft_strstr(char *str, char *to_find)
+char			*ft_strstr(char *str, char *to_find)
 {
 	if (*to_find == '\0')
 		return (str);
