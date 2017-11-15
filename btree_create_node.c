@@ -1,26 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   btree_create_node.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tkeynes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/03 12:44:37 by tkeynes           #+#    #+#             */
-/*   Updated: 2017/11/15 13:48:36 by tkeynes          ###   ########.fr       */
+/*   Created: 2017/08/17 08:51:59 by tkeynes           #+#    #+#             */
+/*   Updated: 2017/08/18 06:41:45 by tkeynes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+t_btree		*btree_create_node(void *item)
 {
-	int counter;
+	t_btree	*elem;
 
-	counter = 0;
-	while (*str != '\0')
-	{
-		counter++;
-		str++;
-	}
-	return (counter);
+	elem = (t_btree*)malloc(sizeof(t_btree));
+	elem->right = NULL;
+	elem->left = NULL;
+	elem->item = item;
+	return (elem);
 }

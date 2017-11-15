@@ -6,13 +6,13 @@
 /*   By: tkeynes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 17:39:40 by tkeynes           #+#    #+#             */
-/*   Updated: 2017/11/14 17:42:50 by tkeynes          ###   ########.fr       */
+/*   Updated: 2017/11/15 14:01:57 by tkeynes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(char c)
+int	ft_isprint(int c)
 {
 	if (c >= ' ' && c < 127)
 		return (1);

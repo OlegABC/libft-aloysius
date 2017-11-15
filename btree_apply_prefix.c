@@ -1,26 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   btree_apply_prefix.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tkeynes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/03 12:44:37 by tkeynes           #+#    #+#             */
-/*   Updated: 2017/11/15 13:48:36 by tkeynes          ###   ########.fr       */
+/*   Created: 2017/08/17 08:59:46 by tkeynes           #+#    #+#             */
+/*   Updated: 2017/08/18 06:42:44 by tkeynes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+void	btree_apply_prefix(t_btree *root, void (*applyf)(void *))
 {
-	int counter;
-
-	counter = 0;
-	while (*str != '\0')
-	{
-		counter++;
-		str++;
-	}
-	return (counter);
+	if (!root)
+		return ;
+	applyf(root->item);
+	btree_apply_prefix(root->left, applyf);
+	btree_apply_prefix(root->right, applyf);
 }

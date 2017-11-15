@@ -6,7 +6,7 @@
 #    By: tkeynes <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/08/09 19:41:30 by tkeynes           #+#    #+#              #
-#    Updated: 2017/11/14 20:29:59 by tkeynes          ###   ########.fr        #
+#    Updated: 2017/11/15 13:18:29 by tkeynes          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,7 +63,18 @@ SRC =	ft_atoi.c \
 		ft_putchar_fd.c \
 		ft_putstr_fd.c \
 		ft_putendl_fd.c \
-		ft_putnbr_fd.c
+		ft_putnbr_fd.c \
+		ft_lstnew.c \
+		ft_lstdelone.c \
+		ft_lstdel.c \
+		ft_lstadd.c \
+		ft_lstiter.c \
+		ft_lstmap.c \
+		btree_apply_infix.c \
+		btree_apply_prefix.c \
+		btree_apply_suffix.c \
+		btree_create_node.c \
+		btree_insert_data.c
 
 OBJ = $(SRC:.c=.o)
 	HEADER = -I libft.h -I

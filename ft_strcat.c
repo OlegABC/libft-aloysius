@@ -6,13 +6,13 @@
 /*   By: tkeynes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/06 04:10:31 by tkeynes           #+#    #+#             */
-/*   Updated: 2017/11/14 19:59:34 by tkeynes          ###   ########.fr       */
+/*   Updated: 2017/11/15 13:51:57 by tkeynes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcat(char *dest, char *src)
+char	*ft_strcat(char *dest, const char *src)
 {
 	int counter;
 
