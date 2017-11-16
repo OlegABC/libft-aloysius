@@ -6,13 +6,13 @@
 /*   By: tkeynes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 19:58:53 by tkeynes           #+#    #+#             */
-/*   Updated: 2017/11/14 19:59:08 by tkeynes          ###   ########.fr       */
+/*   Updated: 2017/11/15 15:04:45 by tkeynes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr(char *str)
+void	ft_putstr(const char *str)
 {
 	if (!str)
 		return ;
