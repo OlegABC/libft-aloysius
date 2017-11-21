@@ -6,13 +6,13 @@
 /*   By: tkeynes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/14 15:06:10 by tkeynes           #+#    #+#             */
-/*   Updated: 2017/11/16 18:17:25 by tkeynes          ###   ########.fr       */
+/*   Updated: 2017/11/21 15:51:48 by tkeynes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
-void	ft_list_push_front(t_list **begin_list, void *data)
+t_list	*ft_list_push_front(t_list **begin_list, void *data)
 {
 	t_list *new_elem;
 	t_list *tmp;
@@ -21,4 +21,5 @@ void	ft_list_push_front(t_list **begin_list, void *data)
 	new_elem = ft_create_elem(data);
 	*begin_list = new_elem;
 	(*begin_list)->next = tmp;
+	return (new_elem);
 }

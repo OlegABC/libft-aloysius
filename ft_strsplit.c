@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 const	char	*ft_str_find_next(const char *str, char c, int skip)
 {

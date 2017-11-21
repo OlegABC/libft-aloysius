@@ -6,7 +6,7 @@
 /*   By: tkeynes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 20:08:00 by tkeynes           #+#    #+#             */
-/*   Updated: 2017/11/16 18:14:13 by tkeynes          ###   ########.fr       */
+/*   Updated: 2017/11/21 15:51:14 by tkeynes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,8 +117,8 @@ void				btree_apply_by_level(t_btree *root, void (*applyf
 )(void *item, int current_level, int is_first_elem));
 
 t_list				*ft_create_elem(void *data);
-void				ft_list_push_back(t_list **begin_list, void *data);
-void				ft_list_push_front(t_list **begin_list
+t_list				*ft_list_push_back(t_list **begin_list, void *data);
+t_list				*ft_list_push_front(t_list **begin_list
 , void *data);
 int					ft_list_size(t_list *begin_list);
 t_list				*ft_list_last(t_list *begin_list);

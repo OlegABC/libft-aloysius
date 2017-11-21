@@ -6,13 +6,13 @@
 /*   By: tkeynes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/14 14:55:44 by tkeynes           #+#    #+#             */
-/*   Updated: 2017/11/16 18:17:32 by tkeynes          ###   ########.fr       */
+/*   Updated: 2017/11/21 15:50:44 by tkeynes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
-void	ft_list_push_back(t_list **begin_list, void *data)
+t_list	*ft_list_push_back(t_list **begin_list, void *data)
 {
 	t_list	*current;
 	t_list	*new;
@@ -22,11 +22,12 @@ void	ft_list_push_back(t_list **begin_list, void *data)
 	if (!begin_list || !(*begin_list))
 	{
 		*begin_list = new;
-		return ;
+		return (new);
 	}
 	while (current->next)
 	{
 		current = current->next;
 	}
 	current->next = new;
+	return (new);
 }

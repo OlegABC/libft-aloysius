@@ -6,7 +6,7 @@
 #    By: tkeynes <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/08/09 19:41:30 by tkeynes           #+#    #+#              #
-#    Updated: 2017/11/16 18:20:44 by tkeynes          ###   ########.fr        #
+#    Updated: 2017/11/21 16:01:30 by tkeynes          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -97,7 +97,7 @@ SRC =	ft_atoi.c \
 		ft_sorted_list_merge.c
 
 OBJ = $(SRC:.c=.o)
-	HEADER = -I libft.h -I
+	HEADER = -I includes/libft.h -I
 
 all: $(NAME)
 
