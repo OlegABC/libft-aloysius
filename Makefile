@@ -94,10 +94,13 @@ SRC =	ft_atoi.c \
 		ft_list_merge.c \
 		ft_list_sort.c \
 		ft_sorted_list_insert.c \
-		ft_sorted_list_merge.c
+		ft_sorted_list_merge.c \
+		ft_max.c \
+		ft_min.c \
+		ft_print_unicode.c
 
 OBJ = $(SRC:.c=.o)
-	HEADER = -I includes/libft.h -I
+	HEADER = -I includes/libft.h
 
 all: $(NAME)
 

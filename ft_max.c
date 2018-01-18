@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tkeynes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/03 12:44:37 by tkeynes           #+#    #+#             */
-/*   Updated: 2017/11/15 13:48:36 by tkeynes          ###   ########.fr       */
+/*   Created: 2017/08/03 13:20:41 by tkeynes           #+#    #+#             */
+/*   Updated: 2017/11/15 13:59:33 by tkeynes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/libft.h"
 
-size_t	ft_strlen(const char *s)
+int		ft_max(int a, int b)
 {
-	size_t size;
-
-	if (!s)
-		return (0);
-	size = 0;
-	while (s[size])
-		size++;
-	return (size);
+	if (a > b)
+		return (a);
+	return (b);
 }
